@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SUIT v1", sans-serif;
+}
+
+html, body {
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*overflow: hidden;*/
+  scroll-behavior: smooth;
+  background-color: var(--luna-white);
+  color: var(--luna-black);
+}
+
+:root {
+  --luna-bright: #907FDF;
+  --luna-purple: #524B9B;
+  --luna-dark: #3A3A60;
+  --luna-black: #2B274B;
+  --luna-white: #FAFAFF;
+}
+
+@font-face {
+  font-family: 'SUITv1';
+  font-weight: 200;
+  src: url('/fonts/SUITv1-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SUITv1';
+  font-weight: 300;
+  src: url('/fonts/SUITv1-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SUITv1';
+  font-weight: 400;
+  src: url('/fonts/SUITv1-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SUITv1';
+  font-weight: 500;
+  src: url('/fonts/SUITv1-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SUITv1';
+  font-weight: 600;
+  src: url('/fonts/SUITv1-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SUITv1';
+  font-weight: 700;
+  src: url('/fonts/SUITv1-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SUITv1';
+  font-weight: 800;
+  src: url('/fonts/SUITv1-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SUITv1';
+  font-weight: 900;
+  src: url('/fonts/SUITv1-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraMono';
+  font-weight: 400;
+  src: url('/fonts/FiraMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraMono';
+  font-weight: 500;
+  src: url('/fonts/FiraMono-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraMono';
+  font-weight: 700;
+  src: url('/fonts/FiraMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NothingFont';
+  font-weight: 600;
+  src: url('/fonts/nothing-font-5x7.ttf') format('truetype');
+}
