@@ -11,6 +11,7 @@ export default function Result() {
     const [correctAnswers, setCorrectAnswers] = useState(0);
     const [rank, setRank] = useState(0);
     const [totalResults, setTotalResults] = useState(0);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const fetchRank = async () => {
@@ -30,6 +31,7 @@ export default function Result() {
             const data = await response.json();
             setRank(data.rank);
             setTotalResults(data.totalResults);
+            setIsLoading(false);
         };
 
         fetchRank();
@@ -47,7 +49,7 @@ export default function Result() {
                         {TOTAL_QUESTIONS}문제 중 {correctAnswers}문제를 맞추셨습니다! 🎉
                     </h1>
                     <p className="text-[20px] text-center">
-                        현재 {totalResults}명 중 {rank}등!
+                        {isLoading ? "로딩 중..." : `현재 ${totalResults}명 중 ${rank}등!`}
                     </p>
                 </div>
                 <button
