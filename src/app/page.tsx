@@ -86,7 +86,7 @@ export default function Home() {
                             required
                         />
                         <input
-                            placeholder="전화번호"
+                            placeholder="전화번호(선택)"
                             className='w-full py-[10px] px-[12px] rounded-[5px] border-[1px] border-[#c0c0dc60] outline-none'
                             type="tel"
                             value={contact[0]}

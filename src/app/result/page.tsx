@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
-const TOTAL_QUESTIONS = 10;
+const TOTAL_QUESTIONS = 15;
 
 export default function Result() {
     const router = useRouter();
