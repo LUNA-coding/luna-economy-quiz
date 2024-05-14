@@ -15,9 +15,8 @@ export async function POST(request: NextRequest) {
 
         await collection.insertOne({ name, phoneNumber, score });
 
-        const results = await collection.find().sort({ score: -1 }).toArray();
-        const currentUserIndex = results.findIndex((result) => result.phoneNumber === phoneNumber);
-        const rank = currentUserIndex >= 0 ? currentUserIndex + 1 : -1;
+        const results = await collection.find({}, { sort: { score: -1 } }).toArray();
+        const rank = results.findIndex((result) => result.phoneNumber === phoneNumber) + 1;
         const totalResults = results.length;
 
         return NextResponse.json({ rank, totalResults });
