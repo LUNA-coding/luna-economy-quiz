@@ -139,7 +139,7 @@ export default function Quiz() {
                     setIsAnswered(false);
                     setShowExplanation(false);
                 }
-            }, 2000);
+            }, 3000);
 
             return () => clearTimeout(timer);
         }
@@ -148,7 +148,7 @@ export default function Quiz() {
     const handleAnswerClick = (answer: any) => {
         setSelectedAnswer(answer);
         setIsAnswered(true);
-        setTimeLeft(2);
+        setTimeLeft(3);
         setShowExplanation(true);
 
         if (answer === questions[currentQuestion].correctAnswer) {
