@@ -37,7 +37,11 @@ export default function Home() {
         const nameInput = form.elements.namedItem("name") as HTMLInputElement;
         const phoneNumberInput = form.elements.namedItem("phoneNumber") as HTMLInputElement;
 
-        const name = nameInput ? nameInput.value : "null";
+        const randomNum = Math.floor(Math.random() * 10000);
+        const paddedNum = String(randomNum).padStart(4, '0');
+        const nameWithNum = `${nameInput.value}${paddedNum}`;
+
+        const name = nameInput ? nameWithNum : "null";
         const phoneNumber = phoneNumberInput ? phoneNumberInput.value : "null";
 
         if (!phoneNumber) {
@@ -51,6 +55,7 @@ export default function Home() {
 
         router.push('/quiz');
     };
+
 
     return (
         <div className='flex flex-col items-center'>
