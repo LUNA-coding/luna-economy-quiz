@@ -45,7 +45,7 @@ export default function Home() {
         const phoneNumber = phoneNumberInput ? phoneNumberInput.value : "null";
 
         if (!phoneNumber) {
-            const yes = confirm("전화번호를 입력하지 않으면 기프티콘 수령을 할 수 없어요. 🫨\n계속 진행하시겠어요?");
+            const yes = confirm("전화번호를 입력하지 않으면 상품 수령을 할 수 없어요. 🫨\n계속 진행하시겠어요?");
             if (!yes) return;
         }
 
