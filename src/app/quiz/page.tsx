@@ -180,7 +180,7 @@ export default function Quiz() {
                 <div className='flex flex-row w-full justify-between py-[20px] px-[60px]'>
                     <div>
                         <h2 className='font-[500] text-[40px]'>Q{currentQuestion + 1}</h2>
-                        <Link className='font-[400] text-[15px]' href={'/'}>&lt; 메인을 돌아가기</Link>
+                        <Link className='font-[400] text-[15px]' href={'/'}>&lt; 메인으로 돌아가기</Link>
                     </div>
                     <div>
                         <p className='font-[400] text-[15px] text-right'>제한시간</p>
